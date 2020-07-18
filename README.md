@@ -1,9 +1,9 @@
-# hyperdrive-to-zip-stream
+# dwebfs-to-zip-stream
 
 Usage
 
 ```js
-const toZipStream = require('hyperdrive-to-zip-stream')
+const toZipStream = require('dwebfs-to-zip-stream')
 
 toZipStream(archive, '/').pipe(fs.createWriteStream(...))
 ```

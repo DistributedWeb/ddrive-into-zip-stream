@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pfrazee/hyperdrive-to-zip-stream.git"
+    "url": "git+https://github.com/dbrowser/dwebfs-to-zip-stream.git"
   },
   "keywords": [
     "dwebfs",
@@ -18,9 +18,9 @@
   "author": "Paul Frazee <pfrazee@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pfrazee/hyperdrive-to-zip-stream/issues"
+    "url": "https://github.com/dbrowser/dwebfs-to-zip-stream/issues"
   },
-  "homepage": "https://github.com/pfrazee/hyperdrive-to-zip-stream#readme",
+  "homepage": "https://github.com/dbrowser/dwebfs-to-zip-stream#readme",
   "dependencies": {
     "from2": "^2.3.0",
     "dbrowser-dat-api": "^1.0.0",

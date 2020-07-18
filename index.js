@@ -2,7 +2,7 @@ const {join} = require('path')
 const yazl = require('yazl')
 const from2 = require('from2')
 const through2Concurrent = require('through2-concurrent')
-const pda = require('pauls-dat-api')
+const pda = require('dbrowser-dweb-api')
 
 module.exports = function (archive, dirpath) {
   var zipfile = new yazl.ZipFile()
