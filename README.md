@@ -1,9 +1,9 @@
-# dwebfs-to-zip-stream
+# ddrive-to-zip-stream
 
 Usage
 
 ```js
-const toZipStream = require('dwebfs-to-zip-stream')
+const toZipStream = require('ddrive-to-zip-stream')
 
 toZipStream(archive, '/').pipe(fs.createWriteStream(...))
 ```

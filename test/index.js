@@ -1,5 +1,5 @@
 const tape = require('tape')
-const dwebfs = require('dwebfs')
+const ddrive = require('ddrive')
 const yauzl = require('yauzl')
 const tempy = require('tempy')
 const fs = require('fs')
@@ -13,7 +13,7 @@ function readFile (name) {
 }
 
 tape('creates a valid zip archive', async t => {
-  var archive = dwebfs(tempy.directory())
+  var archive = ddrive(tempy.directory())
   await new Promise(archive.ready)
   await pda.writeFile(archive, 'hello.txt', readFile('hello.txt'), 'utf8')
   await pda.writeFile(archive, 'log.js', readFile('log.js'), 'utf8')
@@ -37,7 +37,7 @@ tape('creates a valid zip archive', async t => {
 })
 
 tape('creates a valid zip archive from subfolders', async t => {
-  var archive = dwebfs(tempy.directory())
+  var archive = ddrive(tempy.directory())
   await new Promise(archive.ready)
   await pda.writeFile(archive, 'hello.txt', readFile('hello.txt'), 'utf8')
   await pda.writeFile(archive, 'log.js', readFile('log.js'), 'utf8')
@@ -59,7 +59,7 @@ tape('creates a valid zip archive from subfolders', async t => {
 })
 
 tape('creates a valid zip archive from an empty archives', async t => {
-  var archive = dwebfs(tempy.directory())
+  var archive = ddrive(tempy.directory())
   await new Promise(archive.ready)
 
   toZipStream(archive).pipe(concat(zipBuf => {
