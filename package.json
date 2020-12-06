@@ -1,7 +1,7 @@
 {
   "name": "ddrive-to-zip-stream",
   "version": "1.0.0",
-  "description": "Create a zipfile from a ddrive",
+  "description": "Create a zipfile from a dDrive",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"
